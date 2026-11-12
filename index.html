@@ -1,4 +1,4 @@
-<meta charset="utf-8">
+<meta charset="utf-8"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#2B2419"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Xưởng in">
 <title>Ông Chủ Xưởng In</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Game quản lý xưởng in bao bì: nhận đơn, mua giấy, mua máy, trả lương, xem có lời không.">
@@ -2983,7 +2983,7 @@ html.mg2-on,html.mg2-on body{overflow:hidden}
   .cbok{font-weight:700;color:#2F6F6A;font-size:14px;padding:6px 0}
   .outbox2{display:flex;flex-direction:column;gap:6px;padding:10px;border-radius:14px;border:1.5px solid var(--line,#cdbb94);background:var(--sheet,#F6EEDB);margin:8px 0}
   .cbs{font-size:12px;opacity:.7}
-  .cbfc{display:flex}.cbfc .face{width:28px;height:28px;border-radius:50%;margin-left:-6px}.cbfc .face:first-child{margin-left:0}`,document.head.appendChild(E)}(),function(){const n=window.XU;if(!n)return;document.addEventListener("click",k=>{k.target.closest&&k.target.closest('[data-act="room"]')&&setTimeout(()=>{const C=document.querySelector("[data-room-body]");if(C){const O=C.getBoundingClientRect().top+scrollY-70;window.scrollTo({top:Math.max(0,O),behavior:"smooth"})}},120)});const i=n.canhHTML;i&&(n.canhHTML=function(k){const b=i.apply(this,arguments);if(!b)return b;const C=(b.match(/class="cbr"/g)||[]).length;if(C<=2)return b;let O=0;return b.replace(/<div class="cbr">/g,E=>++O>2?'<div class="cbr cbx">':E).replace(/<\/div>$/,`<button class="cbmore" type="button" onclick="this.parentNode.classList.add('all')">+ `+(C-2)+" vi\u1EC7c n\u1EEFa</button></div>")});const t='[data-chu="1"],[data-chu="2"]',l=document.createElement("style");l.textContent=`
+  .cbfc{display:flex}.cbfc .face{width:28px;height:28px;border-radius:50%;margin-left:-6px}.cbfc .face:first-child{margin-left:0}`,document.head.appendChild(E)}(),function(){const n=window.XU;if(!n)return;document.addEventListener("click",k=>{k.target.closest&&k.target.closest('[data-act="room"]')&&setTimeout(()=>{const C=document.querySelector("[data-room-body]");if(C){const O=C.getBoundingClientRect().top+scrollY-70;window.scrollTo({top:Math.max(0,O),behavior:"smooth"})}},120)});const i=n.canhHTML;i&&(n.canhHTML=function(k){const b=i.apply(this,arguments);if(!b)return b;const C=(b.match(/class="cbr"/g)||[]).length;if(C<=2)return b;let O=0;return b.replace(/<div class="cbr">/g,E=>++O>2?'<div class="cbr cbx">':E).replace(/<\/div>$/,`<button class="cbmore" type="button" onclick="this.parentNode.classList.add('all')">+ `+(C-2)+" vi\u1EC7c n\u1EEFa</button></div>")}),document.addEventListener("contextmenu",k=>{k.target.closest('input,textarea,[contenteditable="true"]')||k.preventDefault()});const t='[data-chu="1"],[data-chu="2"]',l=document.createElement("style");l.textContent=`
   /* 4 */ #app{padding-bottom:96px}
   body{padding-bottom:env(safe-area-inset-bottom,0px)}
   .tabp,.panel:last-child{scroll-margin-bottom:96px}
@@ -3006,6 +3006,13 @@ html.mg2-on,html.mg2-on body{overflow:hidden}
   .cbmore{align-self:flex-start;border:0;background:none;color:#8C2F39;font:inherit;font-weight:800;font-size:14px;padding:2px 0;cursor:pointer}
   /* 16 */ .ln-hint{bottom:auto!important;top:46px;max-width:calc(100% - 20px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   /* 17 */ html:is(${t}) .seg[aria-label="T\u0103ng ca"],html:is(${t}) .seg:has([data-act="ot"]){display:grid!important;grid-template-columns:1fr}
+  /* v137 (ch\u1EE7 game: gi\u1EEF ng\xF3n tay l\xEAn ch\u1EEF \u2192 m\xE0n xanh nh\u1EA5p nh\xE1y): t\u1EAFt t\xF4 s\xE1ng khi ch\u1EA1m + b\xF4i ch\u1ECDn ch\u1EEF + menu gi\u1EEF l\xE2u, tr\u1EEB \xF4 nh\u1EADp */
+  html,body,*{-webkit-tap-highlight-color:transparent}
+  body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+  input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+  img,svg,image{-webkit-user-drag:none;user-drag:none}
   /* 19 */ .roomh .tiny:empty,.roomh small:empty{display:none}`,document.head.appendChild(l)}();
 
 </script>
+
+<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
