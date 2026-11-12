@@ -1,5 +1,5 @@
-/* bản 139 — trang: mạng trước (luôn lấy bản mới), hình/phim: bộ nhớ trước (chơi được khi mất mạng) */
-const C='xuong-139';
+/* bản 140 — trang: mạng trước (luôn lấy bản mới), hình/phim: bộ nhớ trước (chơi được khi mất mạng) */
+const C='xuong-140';
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.addAll(['./','index.html','manifest.webmanifest','icon-192.png'])))});
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C&&!k.startsWith('xuong-media')).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||e.request.headers.has('range'))return;
